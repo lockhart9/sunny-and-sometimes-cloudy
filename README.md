@@ -21,6 +21,19 @@ $ ./target/release/sunny-and-sometimes-cloudy -c <city_name>
 That's it. Simple!
 
 
+## Example
+
+It dumps forecasts 3 days ahead.
+
+```
+$ ./target/release/sunny-and-sometimes-cloudy  -c さいたま
+★さいたま★ の天気予報(檜山沙耶は至高)
+05/06, 予報: 曇時々晴, 最低気温: -℃, 最高気温: -℃
+05/07, 予報: 曇り, 最低気温: 14℃, 最高気温: 20℃
+05/08, 予報: 曇時々晴, 最低気温: 13℃, 最高気温: 24℃
+```
+
+
 ## City
 
 Following cities in Japan are supported!
