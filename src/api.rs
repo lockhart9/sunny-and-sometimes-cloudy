@@ -1,5 +1,4 @@
-use chrono::naive::{NaiveDate, NaiveDateTime};
-use chrono::{DateTime, Local};
+use chrono::naive::NaiveDate;
 use serde::Deserialize;
 
 #[derive(Default, Debug)]
@@ -23,10 +22,15 @@ impl From<i32> for City {
     }
 }
 
+impl std::fmt::Display for City {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "city_id: {}", self.0)
+    }
+}
+
 #[derive(Default)]
 pub struct CityBuilder {
     city_id: String,
-    city_name: String,
 }
 
 impl CityBuilder {
