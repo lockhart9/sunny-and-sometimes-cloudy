@@ -1,4 +1,6 @@
 # sunny-and-sometimes-cloudy
+
+![build workflow](https://github.com/lockhart9/sunny-and-sometimes-cloudy/actions/workflows/rust.yml/badge.svg)
  
 Rust practice.  
 CLI tool for getting weather forecasts in Japan.
